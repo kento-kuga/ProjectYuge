@@ -1,10 +1,10 @@
 ## 1. はじめに
 
 - サーバーの開発は、Rails5 で行う。
-- フロント(UI)の開発は、React + Typescript で行う。  
-  フロントでの画面遷移は React Router を用いる。  
-  フロントとサーバー間の通信は axios で行う。  
-  CSS フレームワークは、Semantic UI React を用いる。
+- フロント(UI)の開発は、React + Typescript で行う。
+- フロントでの画面遷移は React Router を用いる。
+- フロントとサーバー間の通信は axios で行う。
+- CSS フレームワークは、Semantic UI React を用いる。
 
 ## 2. セットアップ方法
 
