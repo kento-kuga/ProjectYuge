@@ -26,18 +26,16 @@
 3. ライブラリをインストール
 
    - プロジェクトフォルダ直下で以下のコマンドを実行し、js ライブラリをインストールする。
-
-   ```
-   docker-compose run front yarn
-   ```
+     ```
+     docker-compose run front yarn
+     ```
 
 4. image をビルド
 
    - 以下のコマンドを実行し、front のイメージファイルを再ビルドする。
-
-   ```
-   docker-compose build
-   ```
+     ```
+     docker-compose build
+     ```
 
 ## 3. 環境の実行方法
 
