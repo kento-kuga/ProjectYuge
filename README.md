@@ -13,7 +13,7 @@
    - 以下のコマンドをプロジェクトフォルダ内で実行する。
 
      ```
-     git clone https://github.com/kento-kuga/rails5-react-docker-boilerplate.git
+     git clone https://github.com/kento-kuga/ProjectYuge
      ```
 
 2. DB を作成
@@ -39,13 +39,13 @@
 
 ## 3. 環境の実行方法
 
-- 開発時は、主に以下のコマンドを使用し。環境を立ち上げる。
+- 開発時は、主に以下のコマンドを使用し、環境を立ち上げる。
 - 基本的には、docker-compose up でコンテナを作成し、その後は docker-compose start、docker-compose stop コマンドでコンテナを開始/停止させる。
 
 - 以下のコマンドを事項すると仮想開発環境(コンテナ)が作成され、自動的にサーバーが起動される。
 
   ```
-  docker-copose up -d
+  docker-compose up -d
   ```
 
   以下のアドレスにアクセスし、各コンテナが起動されているか確認する。
