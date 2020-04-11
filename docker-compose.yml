@@ -26,11 +26,9 @@ services:
       - "8000:3000"
     volumes:
       - ./front:/myapp
-      - yarn-cache:/usr/local/share/.cache/yarn/v6
     depends_on:
       - api
     stdin_open: true
 
 volumes:
   dbdata:
-  yarn-cache:
