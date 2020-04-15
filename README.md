@@ -45,14 +45,21 @@
   git clone https://github.com/kento-kuga/ProjectYuge
   ```
 
-2. DB を作成
+2. ビルドする。
+
+   - プロジェクトフォルダ直下で以下のコマンドを実行し、イメージをビルドする。
+     ```
+     docker-compose build --no-cache
+     ```
+
+3. DB を作成
 
    - プロジェクトフォルダ直下で以下のコマンドを実行し、DB を作成する。
      ```
      docker-compose run api rails db:create
      ```
 
-3. ライブラリをインストール
+4. ライブラリをインストール
 
    - プロジェクトフォルダ直下で以下のコマンドを実行し、js ライブラリをインストールする。
 
@@ -60,7 +67,7 @@
      docker-compose run front yarn
      ```
 
-4. image をビルド
+5. image をビルド
 
    - 以下のコマンドを実行し、front のイメージファイルを再ビルドする。
      ```
