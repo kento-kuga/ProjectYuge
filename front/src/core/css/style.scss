@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "SmartFontUI";
+  src: url("../font/SmartFontUI.otf");
+}
+
+body {
+  background-color: #448cad;
+  font-family: "SmartFontUI" !important;
+}
+
+button {
+  font-family: "SmartFontUI" !important;
+}
+
+h1 {
+  font-family: "SmartFontUI" !important;
+}
+
+/*
+ *　フォーム
+ */
+
+// LeftLabelForm
+.ui.input.left-label-form-input {
+  input {
+    outline: none;
+    border: 2px solid #f4f5f6;
+    border-radius: 5px;
+    background-color: transparent;
+  }
+}
+
+.ui.form .inline.field .left-label-form-label {
+  color: #f4f5f6;
+}
+
+/*
+ *　レイアウト
+ */
+
+//CenterContainer
+.center-container-row {
+  height: 100vh;
+}
+
+//Logo
+.logo-title {
+  font-size: 60px;
+  color: #f4f5f6;
+  font-weight: bold;
+}

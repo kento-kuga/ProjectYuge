@@ -1,16 +1,31 @@
 import React from "react";
-import TextButton from "../ui/button/TextButton";
-import styles from "./css/Login.module.scss";
+import {
+  Header,
+  Form,
+  Button,
+  FormField,
+  Input,
+  Image,
+  GridColumn,
+  HeaderContent,
+} from "semantic-ui-react";
+import { CenterContainer } from "../ui/layout/center-container";
+import { Row } from "../ui/layout/row";
+import { Logo } from "../ui/layout/logo";
+import { LeftLabelForm } from "../ui/form/left-label-form";
 
 interface props {}
 
 const Login = (props: props) => {
   return (
-    <>
-      <div className={styles.LoginButton}>
-        <TextButton text="Login"></TextButton>
-      </div>
-    </>
+    <CenterContainer>
+      <Logo />
+      <LeftLabelForm label="アカウント名" />
+      <Row>
+        <Button>Pre</Button>
+        <Button>Next</Button>
+      </Row>
+    </CenterContainer>
   );
 };
 
