@@ -12,19 +12,23 @@
     "@types/react-dom": "^16.9.0",
     "@types/react-router-dom": "^5.1.4",
     "axios": "^0.19.2",
+    "gulp": "3.9.1",
+    "node-sass": "^4.13.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
+    "semantic-ui": "^2.4.2",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^0.88.2",
-    "typescript": "~3.7.2",
-    "node-sass": "^4.13.1"
+    "typescript": "~3.7.2"
   },
   "scripts": {
+    "build-semantic": "cd src/semantic && gulp build-css build-assets",
+    "watch-semantic": "cd src/semantic && yarn run build-semantic && gulp watch",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
