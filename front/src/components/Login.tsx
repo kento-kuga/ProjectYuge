@@ -1,14 +1,5 @@
 import React from "react";
-import {
-  Header,
-  Form,
-  Button,
-  FormField,
-  Input,
-  Image,
-  GridColumn,
-  HeaderContent,
-} from "semantic-ui-react";
+import { Button } from "semantic-ui-react";
 import { CenterContainer } from "../ui/layout/center-container";
 import { Row } from "../ui/layout/row";
 import { Logo } from "../ui/layout/logo";

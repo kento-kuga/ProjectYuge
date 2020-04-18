@@ -1,6 +1,5 @@
 import React from "react";
 import * as UI from "semantic-ui-react";
-import styles from "./layout.module.css";
 import logo from "../../core/assets/yuge_logo.png";
 
 interface Props {}
