@@ -21,7 +21,6 @@
   left: 0;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  -webkit-transition: none;
   transition: none;
   will-change: transform;
   -webkit-transform: translate3d(0, 0, 0);
@@ -110,7 +109,6 @@ body.pushable {
   position: fixed;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  -webkit-transition: -webkit-transform 500ms ease;
   transition: -webkit-transform 500ms ease;
   transition: transform 500ms ease;
   transition: transform 500ms ease, -webkit-transform 500ms ease;
@@ -128,14 +126,13 @@ body.pushable {
           backface-visibility: hidden;
   overflow: hidden;
   min-height: 100%;
-  -webkit-transition: -webkit-transform 500ms ease;
   transition: -webkit-transform 500ms ease;
   transition: transform 500ms ease;
   transition: transform 500ms ease, -webkit-transform 500ms ease;
   z-index: 2;
 }
 body.pushable > .pusher {
-  background: #FFFFFF;
+  background: #448CAD;
 }
 
 /* Pusher should inherit background from context */
@@ -155,7 +152,6 @@ body.pushable > .pusher {
   background-color: rgba(0, 0, 0, 0.4);
   overflow: hidden;
   opacity: 0;
-  -webkit-transition: opacity 500ms;
   transition: opacity 500ms;
   will-change: opacity;
   z-index: 1000;
@@ -206,13 +202,11 @@ body.pushable > .pusher {
 /* Shadow Direction */
 .ui.left.visible.sidebar,
 .ui.right.visible.sidebar {
-  -webkit-box-shadow: 0px 0px 20px rgba(34, 36, 38, 0.15);
-          box-shadow: 0px 0px 20px rgba(34, 36, 38, 0.15);
+  box-shadow: 0px 0px 20px rgba(34, 36, 38, 0.15);
 }
 .ui.top.visible.sidebar,
 .ui.bottom.visible.sidebar {
-  -webkit-box-shadow: 0px 0px 20px rgba(34, 36, 38, 0.15);
-          box-shadow: 0px 0px 20px rgba(34, 36, 38, 0.15);
+  box-shadow: 0px 0px 20px rgba(34, 36, 38, 0.15);
 }
 
 /* Visible On Load */
@@ -365,7 +359,6 @@ body.pushable > .pusher {
 /* Animation */
 .animating.ui.overlay.sidebar,
 .ui.visible.overlay.sidebar {
-  -webkit-transition: -webkit-transform 500ms ease;
   transition: -webkit-transform 500ms ease;
   transition: transform 500ms ease;
   transition: transform 500ms ease, -webkit-transform 500ms ease;
@@ -403,7 +396,6 @@ body.pushable > .pusher {
 
 /* Initial */
 .ui.push.sidebar {
-  -webkit-transition: -webkit-transform 500ms ease;
   transition: -webkit-transform 500ms ease;
   transition: transform 500ms ease;
   transition: transform 500ms ease, -webkit-transform 500ms ease;
@@ -450,7 +442,6 @@ body.pushable > .pusher {
 .ui.visible.uncover.sidebar {
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
-  -webkit-transition: -webkit-transform 500ms ease;
   transition: -webkit-transform 500ms ease;
   transition: transform 500ms ease;
   transition: transform 500ms ease, -webkit-transform 500ms ease;
@@ -486,7 +477,6 @@ body.pushable > .pusher {
 
 /* Animation */
 .ui.animating.slide.along.sidebar {
-  -webkit-transition: -webkit-transform 500ms ease;
   transition: -webkit-transform 500ms ease;
   transition: transform 500ms ease;
   transition: transform 500ms ease, -webkit-transform 500ms ease;
@@ -528,7 +518,6 @@ body.pushable > .pusher {
 
 /* Animation */
 .ui.animating.slide.out.sidebar {
-  -webkit-transition: -webkit-transform 500ms ease;
   transition: -webkit-transform 500ms ease;
   transition: transform 500ms ease;
   transition: transform 500ms ease, -webkit-transform 500ms ease;
@@ -547,7 +536,6 @@ body.pushable > .pusher {
 
 /* Initial */
 .ui.scale.down.sidebar {
-  -webkit-transition: -webkit-transform 500ms ease;
   transition: -webkit-transform 500ms ease;
   transition: transform 500ms ease;
   transition: transform 500ms ease, -webkit-transform 500ms ease;
@@ -592,7 +580,6 @@ body.pushable > .pusher {
 
 /* Animation */
 .ui.animating.scale.down > .visible.ui.sidebar {
-  -webkit-transition: -webkit-transform 500ms ease;
   transition: -webkit-transform 500ms ease;
   transition: transform 500ms ease;
   transition: transform 500ms ease, -webkit-transform 500ms ease;

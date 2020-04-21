@@ -16,13 +16,8 @@
 
 /* Standalone */
 .ui.statistic {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin: 1em 0em;
   max-width: auto;
 }
@@ -44,32 +39,18 @@
 
 /* Grouped */
 .ui.statistics {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 .ui.statistics > .statistic {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex: 0 1 auto;
+  flex-direction: column;
   margin: 0em 1.5em 1em;
   max-width: auto;
 }
 .ui.statistics {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: 1em -1.5em -1em;
 }
@@ -99,7 +80,7 @@
 
 .ui.statistics .statistic > .value,
 .ui.statistic > .value {
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'SmartFontUI';
   font-size: 4rem;
   font-weight: normal;
   line-height: 1em;
@@ -114,10 +95,10 @@
 
 .ui.statistics .statistic > .label,
 .ui.statistic > .label {
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'SmartFontUI';
   font-size: 1em;
   font-weight: bold;
-  color: rgba(0, 0, 0, 0.87);
+  color: #448CAD;
   text-transform: uppercase;
   text-align: center;
 }
@@ -263,30 +244,17 @@
 ---------------*/
 
 .ui.horizontal.statistic {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  align-items: center;
 }
 .ui.horizontal.statistics {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin: 0em;
   max-width: none;
 }
 .ui.horizontal.statistics .statistic {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  align-items: center;
   max-width: none;
   margin: 1em 0em;
 }
@@ -381,7 +349,7 @@
 
 .ui.inverted.statistics .statistic > .value,
 .ui.inverted.statistic .value {
-  color: #FFFFFF;
+  color: #F4F5F6;
 }
 .ui.inverted.statistics .statistic > .label,
 .ui.inverted.statistic .label {

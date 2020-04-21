@@ -3,51 +3,74 @@
   src: url("../font/SmartFontUI.otf");
 }
 
-body {
-  background-color: #448cad;
-  font-family: "SmartFontUI" !important;
-}
-
-button {
-  font-family: "SmartFontUI" !important;
-}
-
-h1 {
-  font-family: "SmartFontUI" !important;
-}
-
 /*
- *　フォーム
+ * コンポーネント
  */
 
-// LeftLabelForm
-.ui.input.left-label-form-input {
-  input {
-    height: 36px;
-    line-height: 36px;
-    background-color: transparent;
-    border: 2px solid #f4f5f6;
+//ログイン-ロゴ行
+.ui.grid .row.login-logo-row {
+  padding-bottom: 0;
+
+}
+
+//ログイン-ボタン領域
+.login-button-area {
+  margin-top: 1.5em;
+
+  //ログイン-Nextボタン
+  .login-next-button {
+    padding: 0.5em 1em;
+    font-size: 20px;
     border-radius: 5px;
-    padding: 0px 5px;
+
   }
 }
 
-.ui.form .inline.field .left-label-form-label {
-  color: #f4f5f6;
+
+/*
+ * UIコンポーネント
+ */
+
+/*
+ * フォーム
+ */
+
+//UnderLineForm
+.under-line-form {
+  .field {
+    .ui.input {
+      input {
+        color: black;
+        border: 0;
+        border-bottom: 3px solid black;
+        border-radius: 0;
+        text-align: center;
+        height: 36px;
+        line-height: 36px;
+        background-color: transparent;
+        font-size: 20px;
+        padding: 0 5px;
+      }
+    }
+  }
 }
 
 /*
  *　レイアウト
  */
 
+.ui.segment.center-panel {
+  padding: 4.2em 2em;
+}
+
 //CenterContainer
 .center-container-row {
-  height: 100vh;
+  height: 90vh;
 }
 
 //Logo
 .logo-title {
   font-size: 60px;
-  color: #f4f5f6;
   font-weight: bold;
+  color: #F4F5F6;
 }

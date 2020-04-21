@@ -99,7 +99,6 @@ ol.ui.list ol li,
   padding-top: 0em;
   padding-right: 0.28571429em;
   vertical-align: top;
-  -webkit-transition: color 0.1s ease;
   transition: color 0.1s ease;
 }
 .ui.list .list > .item > i.icon:only-child,
@@ -161,9 +160,9 @@ ol.ui.list ol li,
 .ui.list > .item .header {
   display: block;
   margin: 0em;
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'SmartFontUI';
   font-weight: bold;
-  color: rgba(0, 0, 0, 0.87);
+  color: #448CAD;
 }
 
 /* Description */
@@ -334,7 +333,7 @@ ol.ui.list ol li,
 
 .ui.list .list > a.item:hover .icon,
 .ui.list > a.item:hover .icon {
-  color: rgba(0, 0, 0, 0.87);
+  color: #448CAD;
 }
 
 
@@ -407,7 +406,6 @@ ol.ui.list ol li,
 .ui.link.list a.item,
 .ui.link.list .item a:not(.ui) {
   color: rgba(0, 0, 0, 0.4);
-  -webkit-transition: 0.1s color ease;
   transition: 0.1s color ease;
 }
 .ui.link.list.list a.item:hover,
@@ -454,7 +452,6 @@ ol.ui.list ol li,
   margin: 0em;
   color: rgba(0, 0, 0, 0.4);
   border-radius: 0.5em;
-  -webkit-transition: 0.1s color ease, 0.1s padding-left ease, 0.1s background-color ease;
   transition: 0.1s color ease, 0.1s padding-left ease, 0.1s background-color ease;
 }
 .ui.selection.list .list > .item:last-child,
@@ -512,7 +509,6 @@ ol.ui.list ol li,
 --------------------*/
 
 .ui.animated.list > .item {
-  -webkit-transition: 0.25s color ease 0.1s, 0.25s padding-left ease 0.1s, 0.25s background-color ease 0.1s;
   transition: 0.25s color ease 0.1s, 0.25s padding-left ease 0.1s, 0.25s background-color ease 0.1s;
 }
 .ui.animated.list:not(.horizontal) > .item:hover {
@@ -568,7 +564,7 @@ ul.ui.list li:before,
 ul.ui.list li:before,
 .ui.bulleted.list .list > a.item:before,
 .ui.bulleted.list > a.item:before {
-  color: rgba(0, 0, 0, 0.87);
+  color: #448CAD;
 }
 ul.ui.list ul,
 .ui.bulleted.list .list {
@@ -590,7 +586,7 @@ ul.ui.horizontal.bulleted.list li:first-child,
 }
 ul.ui.horizontal.bulleted.list li::before,
 .ui.horizontal.bulleted.list > .item::before {
-  color: rgba(0, 0, 0, 0.87);
+  color: #448CAD;
 }
 ul.ui.horizontal.bulleted.list li:first-child::before,
 .ui.horizontal.bulleted.list > .item:first-child::before {
@@ -630,7 +626,7 @@ ol.ui.list li:before,
   counter-increment: ordered;
   content: counters(ordered, ".") " ";
   text-align: right;
-  color: rgba(0, 0, 0, 0.87);
+  color: #448CAD;
   vertical-align: middle;
   opacity: 0.8;
 }

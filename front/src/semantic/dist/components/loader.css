@@ -55,8 +55,7 @@
   border-color: #767676 transparent transparent;
   border-style: solid;
   border-width: 0.2em;
-  -webkit-box-shadow: 0px 0px 0px 1px transparent;
-          box-shadow: 0px 0px 0px 1px transparent;
+  box-shadow: 0px 0px 0px 1px transparent;
 }
 
 /* Active Animation */
@@ -149,12 +148,12 @@
   border-color: rgba(255, 255, 255, 0.15);
 }
 .ui.dimmer .ui.loader:after {
-  border-color: #FFFFFF transparent transparent;
+  border-color: #F4F5F6 transparent transparent;
 }
 
 /* White Dimmer (Inverted) */
 .ui.inverted.dimmer .ui.loader {
-  color: rgba(0, 0, 0, 0.87);
+  color: #448CAD;
 }
 .ui.inverted.dimmer .ui.loader:before {
   border-color: rgba(0, 0, 0, 0.1);
@@ -305,7 +304,7 @@
   border-color: rgba(255, 255, 255, 0.15);
 }
 .ui.inverted.loader:after {
-  border-top-color: #FFFFFF;
+  border-top-color: #F4F5F6;
 }
 
 /*-------------------

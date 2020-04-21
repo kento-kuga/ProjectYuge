@@ -1,3 +1,7 @@
 /*******************************
          Site Overrides
 *******************************/
+@font-face  {
+    font-family: 'SmartFontUI.otf';
+    src:url('themes/default/assets/fonts/SmartFontUI.otf');
+}

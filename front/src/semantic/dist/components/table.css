@@ -17,14 +17,13 @@
 /* Prototype */
 .ui.table {
   width: 100%;
-  background: #FFFFFF;
+  background: #F4F5F6;
   margin: 1em 0em;
   border: 1px solid rgba(34, 36, 38, 0.15);
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   border-radius: 0.28571429rem;
   text-align: left;
-  color: rgba(0, 0, 0, 0.87);
+  color: #448CAD;
   border-collapse: separate;
   border-spacing: 0px;
 }
@@ -44,20 +43,18 @@
 /* Table Content */
 .ui.table th,
 .ui.table td {
-  -webkit-transition: background 0.1s ease, color 0.1s ease;
   transition: background 0.1s ease, color 0.1s ease;
 }
 
 /* Headers */
 .ui.table thead {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 .ui.table thead th {
   cursor: auto;
   background: #F9FAFB;
   text-align: inherit;
-  color: rgba(0, 0, 0, 0.87);
+  color: #448CAD;
   padding: 0.92857143em 0.78571429em;
   vertical-align: inherit;
   font-style: none;
@@ -81,15 +78,14 @@
 
 /* Footer */
 .ui.table tfoot {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 .ui.table tfoot th {
   cursor: auto;
   border-top: 1px solid rgba(34, 36, 38, 0.15);
   background: #F9FAFB;
   text-align: inherit;
-  color: rgba(0, 0, 0, 0.87);
+  color: #448CAD;
   padding: 0.78571429em 0.78571429em;
   vertical-align: middle;
   font-style: normal;
@@ -171,16 +167,14 @@
   .ui.table:not(.unstackable) tr {
     padding-top: 1em;
     padding-bottom: 1em;
-    -webkit-box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.1) inset !important;
-            box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.1) inset !important;
+    box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.1) inset !important;
   }
   .ui.table:not(.unstackable) tr > th,
   .ui.table:not(.unstackable) tr > td {
     background: none;
     border: none !important;
     padding: 0.25em 0.75em !important;
-    -webkit-box-shadow: none !important;
-            box-shadow: none !important;
+    box-shadow: none !important;
   }
   .ui.table:not(.unstackable) th:first-child,
   .ui.table:not(.unstackable) td:first-child {
@@ -189,8 +183,7 @@
   
 /* Definition Table */
   .ui.definition.table:not(.unstackable) thead th:first-child {
-    -webkit-box-shadow: none !important;
-            box-shadow: none !important;
+    box-shadow: none !important;
   }
 }
 
@@ -248,26 +241,22 @@
   background: transparent;
   font-weight: normal;
   color: rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: -1px -1px 0px 1px #FFFFFF;
-          box-shadow: -1px -1px 0px 1px #FFFFFF;
+  box-shadow: -1px -1px 0px 1px #F4F5F6;
 }
 .ui.definition.table tfoot:not(.full-width) th:first-child {
   pointer-events: none;
   background: transparent;
   font-weight: rgba(0, 0, 0, 0.4);
   color: normal;
-  -webkit-box-shadow: 1px 1px 0px 1px #FFFFFF;
-          box-shadow: 1px 1px 0px 1px #FFFFFF;
+  box-shadow: 1px 1px 0px 1px #F4F5F6;
 }
 
 /* Remove Border */
 .ui.celled.definition.table thead:not(.full-width) th:first-child {
-  -webkit-box-shadow: 0px -1px 0px 1px #FFFFFF;
-          box-shadow: 0px -1px 0px 1px #FFFFFF;
+  box-shadow: 0px -1px 0px 1px #F4F5F6;
 }
 .ui.celled.definition.table tfoot:not(.full-width) th:first-child {
-  -webkit-box-shadow: 0px 1px 0px 1px #FFFFFF;
-          box-shadow: 0px 1px 0px 1px #FFFFFF;
+  box-shadow: 0px 1px 0px 1px #F4F5F6;
 }
 
 /* Highlight Defining Column */
@@ -277,8 +266,7 @@
   font-weight: bold;
   color: rgba(0, 0, 0, 0.95);
   text-transform: '';
-  -webkit-box-shadow: '';
-          box-shadow: '';
+  box-shadow: '';
   text-align: '';
   font-size: 1em;
   padding-left: '';
@@ -308,8 +296,7 @@
 
 .ui.table tr.positive,
 .ui.table td.positive {
-  -webkit-box-shadow: 0px 0px 0px #A3C293 inset;
-          box-shadow: 0px 0px 0px #A3C293 inset;
+  box-shadow: 0px 0px 0px #A3C293 inset;
 }
 .ui.table tr.positive,
 .ui.table td.positive {
@@ -323,8 +310,7 @@
 
 .ui.table tr.negative,
 .ui.table td.negative {
-  -webkit-box-shadow: 0px 0px 0px #E0B4B4 inset;
-          box-shadow: 0px 0px 0px #E0B4B4 inset;
+  box-shadow: 0px 0px 0px #E0B4B4 inset;
 }
 .ui.table tr.negative,
 .ui.table td.negative {
@@ -338,8 +324,7 @@
 
 .ui.table tr.error,
 .ui.table td.error {
-  -webkit-box-shadow: 0px 0px 0px #E0B4B4 inset;
-          box-shadow: 0px 0px 0px #E0B4B4 inset;
+  box-shadow: 0px 0px 0px #E0B4B4 inset;
 }
 .ui.table tr.error,
 .ui.table td.error {
@@ -353,8 +338,7 @@
 
 .ui.table tr.warning,
 .ui.table td.warning {
-  -webkit-box-shadow: 0px 0px 0px #C9BA9B inset;
-          box-shadow: 0px 0px 0px #C9BA9B inset;
+  box-shadow: 0px 0px 0px #C9BA9B inset;
 }
 .ui.table tr.warning,
 .ui.table td.warning {
@@ -368,13 +352,12 @@
 
 .ui.table tr.active,
 .ui.table td.active {
-  -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.87) inset;
-          box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.87) inset;
+  box-shadow: 0px 0px 0px #448CAD inset;
 }
 .ui.table tr.active,
 .ui.table td.active {
   background: #E0E0E0 !important;
-  color: rgba(0, 0, 0, 0.87) !important;
+  color: #448CAD !important;
 }
 
 /*--------------
@@ -420,22 +403,19 @@
   .ui[class*="tablet stackable"].table tr {
     padding-top: 1em;
     padding-bottom: 1em;
-    -webkit-box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.1) inset !important;
-            box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.1) inset !important;
+    box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.1) inset !important;
   }
   .ui[class*="tablet stackable"].table tr > th,
   .ui[class*="tablet stackable"].table tr > td {
     background: none;
     border: none !important;
     padding: 0.25em 0.75em;
-    -webkit-box-shadow: none !important;
-            box-shadow: none !important;
+    box-shadow: none !important;
   }
   
 /* Definition Table */
   .ui.definition[class*="tablet stackable"].table thead th:first-child {
-    -webkit-box-shadow: none !important;
-            box-shadow: none !important;
+    box-shadow: none !important;
   }
 }
 
@@ -538,7 +518,7 @@
 .ui.table tr td.selectable.active:hover,
 .ui.selectable.table tr:hover td.active {
   background: #E0E0E0 !important;
-  color: rgba(0, 0, 0, 0.87) !important;
+  color: #448CAD !important;
 }
 .ui.selectable.table tr.positive:hover,
 .ui.table tr td.selectable.positive:hover,
@@ -566,8 +546,7 @@
   margin: 0em -1px;
   width: calc(100% - (-1px * 2));
   max-width: calc(100% - (-1px * 2));
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   border: 1px solid #D4D4D5;
 }
 .ui.attached + .ui.attached.table:not(.top) {
@@ -592,8 +571,7 @@
   margin-top: 0em;
   top: 0px;
   margin-bottom: 1em;
-  -webkit-box-shadow: none, none;
-          box-shadow: none, none;
+  box-shadow: none, none;
   border-radius: 0em 0em 0.28571429rem 0.28571429rem;
 }
 .ui[class*="bottom attached"].table:last-child {
@@ -647,7 +625,7 @@
 }
 .ui.inverted.red.table {
   background-color: #DB2828 !important;
-  color: #FFFFFF !important;
+  color: #F4F5F6 !important;
 }
 
 /* Orange */
@@ -656,7 +634,7 @@
 }
 .ui.inverted.orange.table {
   background-color: #F2711C !important;
-  color: #FFFFFF !important;
+  color: #F4F5F6 !important;
 }
 
 /* Yellow */
@@ -665,7 +643,7 @@
 }
 .ui.inverted.yellow.table {
   background-color: #FBBD08 !important;
-  color: #FFFFFF !important;
+  color: #F4F5F6 !important;
 }
 
 /* Olive */
@@ -674,7 +652,7 @@
 }
 .ui.inverted.olive.table {
   background-color: #B5CC18 !important;
-  color: #FFFFFF !important;
+  color: #F4F5F6 !important;
 }
 
 /* Green */
@@ -683,7 +661,7 @@
 }
 .ui.inverted.green.table {
   background-color: #21BA45 !important;
-  color: #FFFFFF !important;
+  color: #F4F5F6 !important;
 }
 
 /* Teal */
@@ -692,7 +670,7 @@
 }
 .ui.inverted.teal.table {
   background-color: #00B5AD !important;
-  color: #FFFFFF !important;
+  color: #F4F5F6 !important;
 }
 
 /* Blue */
@@ -701,7 +679,7 @@
 }
 .ui.inverted.blue.table {
   background-color: #2185D0 !important;
-  color: #FFFFFF !important;
+  color: #F4F5F6 !important;
 }
 
 /* Violet */
@@ -710,7 +688,7 @@
 }
 .ui.inverted.violet.table {
   background-color: #6435C9 !important;
-  color: #FFFFFF !important;
+  color: #F4F5F6 !important;
 }
 
 /* Purple */
@@ -719,7 +697,7 @@
 }
 .ui.inverted.purple.table {
   background-color: #A333C8 !important;
-  color: #FFFFFF !important;
+  color: #F4F5F6 !important;
 }
 
 /* Pink */
@@ -728,7 +706,7 @@
 }
 .ui.inverted.pink.table {
   background-color: #E03997 !important;
-  color: #FFFFFF !important;
+  color: #F4F5F6 !important;
 }
 
 /* Brown */
@@ -737,7 +715,7 @@
 }
 .ui.inverted.brown.table {
   background-color: #A5673F !important;
-  color: #FFFFFF !important;
+  color: #F4F5F6 !important;
 }
 
 /* Grey */
@@ -746,7 +724,7 @@
 }
 .ui.inverted.grey.table {
   background-color: #767676 !important;
-  color: #FFFFFF !important;
+  color: #F4F5F6 !important;
 }
 
 /* Black */
@@ -755,7 +733,7 @@
 }
 .ui.inverted.black.table {
   background-color: #1B1C1D !important;
-  color: #FFFFFF !important;
+  color: #F4F5F6 !important;
 }
 
 /*--------------
@@ -887,7 +865,7 @@
   cursor: pointer;
   white-space: nowrap;
   border-left: 1px solid rgba(34, 36, 38, 0.15);
-  color: rgba(0, 0, 0, 0.87);
+  color: #448CAD;
 }
 .ui.sortable.table thead th:first-child {
   border-left: none;
@@ -945,14 +923,10 @@
 
 /* Inverted */
 .ui.inverted.sortable.table thead th.sorted {
-  background: rgba(255, 255, 255, 0.15) -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.05)));
-  background: rgba(255, 255, 255, 0.15) -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05));
   background: rgba(255, 255, 255, 0.15) linear-gradient(transparent, rgba(0, 0, 0, 0.05));
   color: #ffffff;
 }
 .ui.inverted.sortable.table thead th:hover {
-  background: rgba(255, 255, 255, 0.08) -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.05)));
-  background: rgba(255, 255, 255, 0.08) -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05));
   background: rgba(255, 255, 255, 0.08) linear-gradient(transparent, rgba(0, 0, 0, 0.05));
   color: #ffffff;
 }
@@ -991,7 +965,7 @@
 /* Definition */
 .ui.inverted.definition.table tfoot:not(.full-width) th:first-child,
 .ui.inverted.definition.table thead:not(.full-width) th:first-child {
-  background: #FFFFFF;
+  background: #F4F5F6;
 }
 .ui.inverted.definition.table tr td:first-child {
   background: rgba(255, 255, 255, 0.02);
@@ -1013,13 +987,11 @@
 .ui.basic.table {
   background: transparent;
   border: 1px solid rgba(34, 36, 38, 0.15);
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 .ui.basic.table thead,
 .ui.basic.table tfoot {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 .ui.basic.table th {
   background: transparent;

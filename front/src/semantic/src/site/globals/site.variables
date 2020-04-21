@@ -1,3 +1,17 @@
 /*******************************
      User Global Variables
 *******************************/
+/* フォント */
+@importGoogleFonts : false;
+@fontName          : 'SmartFontUI';
+@headerFont        : @fontName;
+@pageFont          : @fontName;
+
+/* フォント色 */
+@textColor : #448CAD;
+
+/* 背景色 */
+@pageBackground : #448CAD;
+
+/* 白色 */
+@white : #F4F5F6;
