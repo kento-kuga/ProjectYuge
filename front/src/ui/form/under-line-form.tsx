@@ -5,6 +5,8 @@ interface Props {
   name: string;
   /** 値 */
   value: string;
+  /** 属性 */
+  type?: string;
   /** プレースホルダー */
   placeholder?: string;
   /** 追加スタイル */
@@ -28,6 +30,7 @@ export const UnderLineForm: React.FC<Props> = ({ children, ...props }) => {
           <UI.FormInput
             name={props.name}
             value={props.value}
+            type={props.type}
             placeholder={props.placeholder}
             onChange={(e, data) => handleChange(data.value)}
           ></UI.FormInput>

@@ -7,6 +7,10 @@
  * コンポーネント
  */
 
+/*
+ * ログイン
+ */
+
 //ログイン-ロゴ行
 .ui.grid .row.login-logo-row {
   padding-bottom: 0;
@@ -17,12 +21,23 @@
 .login-button-area {
   margin-top: 1.5em;
 
-  //ログイン-Nextボタン
-  .login-next-button {
+  //ログイン-ボタン
+  .login-button {
     padding: 0.5em 1em;
     font-size: 20px;
     border-radius: 5px;
 
+
+
+  }
+
+  //ログイン-preボタン
+  .login-pre-button {
+    padding: 0.5em 1em;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-right: 0.5em;
+    width: 4.6em;
   }
 }
 
@@ -59,13 +74,19 @@
  *　レイアウト
  */
 
+//CenterPanel
 .ui.segment.center-panel {
   padding: 4.2em 2em;
 }
 
 //CenterContainer
-.center-container-row {
-  height: 90vh;
+.ui.grid.center-container-grid {
+  padding: 0em 2.6em;
+  height: 100vh;
+
+  .center-container-column {
+    max-width: 37em;
+  }
 }
 
 //Logo

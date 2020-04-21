@@ -14,14 +14,26 @@ const Login = (props: props) => {
   //ステート
   //ログイン情報
   const [loginInfo, setLoginInfo] = React.useState(new LoginInfo());
-  //
+  //パスワード入力フラグ
+  const [passwordFlag, setPasswordFlag] = React.useState(false);
 
   //初期処理
   React.useEffect(() => {}, []);
 
   //ハンドラ
   //Nextボタン押下時
-  const handleNext = () => {};
+  const handleNext = () => {
+    setPasswordFlag(true);
+  };
+
+  //Preボタン押下時
+  const handlePre = () => {
+    setLoginInfo((state) => ({
+      ...state,
+      password: "",
+    }));
+    setPasswordFlag(false);
+  };
 
   //フォーム変更時
   const handleChange = (name: string, value: string) => {
@@ -39,21 +51,56 @@ const Login = (props: props) => {
 
       <Row textAlign="center">
         <CenterPanel>
-          <UnderLineForm
-            name="accountName"
-            value={loginInfo.accountName}
-            onChange={handleChange}
-            placeholder="アカウント名を入力"
-          />
-          <ButtonArea className="login-button-area">
-            <Button
-              className="login-next-button"
-              label="Next"
-              onClick={handleNext}
-            />
-          </ButtonArea>
+          {!passwordFlag && (
+            <>
+              <UnderLineForm
+                name="accountName"
+                value={loginInfo.accountName}
+                onChange={handleChange}
+                placeholder="アカウント名を入力"
+              />
+              <ButtonArea className="login-button-area">
+                <Button
+                  className="login-button"
+                  label="Next"
+                  onClick={handleNext}
+                />
+              </ButtonArea>
+            </>
+          )}
+
+          {passwordFlag && (
+            <>
+              <UnderLineForm
+                name="password"
+                value={loginInfo.password}
+                type="password"
+                onChange={handleChange}
+                placeholder="パスワードを入力"
+              />
+              <ButtonArea className="login-button-area">
+                <Button
+                  className="login-pre-button"
+                  label="Pre"
+                  onClick={handlePre}
+                />
+                <Button
+                  className="login-button"
+                  label="Login"
+                  onClick={handleNext}
+                />
+              </ButtonArea>
+            </>
+          )}
         </CenterPanel>
       </Row>
+      <h2 style={{ color: "black" }}>
+        テスト用
+        <br />
+        {loginInfo.accountName}
+        <br />
+        {loginInfo.password}
+      </h2>
     </CenterContainer>
   );
 };

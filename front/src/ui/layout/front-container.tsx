@@ -6,7 +6,7 @@ interface Props {}
 export const FrontContainer: React.FC<Props> = ({ children, ...props }) => {
   return (
     <>
-      <UI.Grid container>{children}</UI.Grid>
+      <UI.Container>{children}</UI.Container>
     </>
   );
 };
