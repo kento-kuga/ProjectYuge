@@ -1,3 +1,8 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  namespace 'api' do
+    namespace 'v1' do
+        get 'steam_user/show'
+        get 'steam_user/player_summarie'
+    end
+  end
 end

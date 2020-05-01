@@ -7,10 +7,14 @@ import { Row } from "../ui/layout/row";
 import { UnderLineForm } from "../ui/form/under-line-form";
 import { CenterPanel } from "../ui/layout/center-panel";
 import { LoginInfo } from "./dto/login";
+import { useHistory } from "react-router";
 
 interface props {}
 
 const Login = (props: props) => {
+  //ルーター
+  const history = useHistory();
+
   //ステート
   //ログイン情報
   const [loginInfo, setLoginInfo] = React.useState(new LoginInfo());
@@ -33,6 +37,11 @@ const Login = (props: props) => {
       password: "",
     }));
     setPasswordFlag(false);
+  };
+
+  //Loginボタン押下時
+  const handleLogin = () => {
+    history.push("/top");
   };
 
   //フォーム変更時
@@ -87,7 +96,7 @@ const Login = (props: props) => {
                 <Button
                   className="login-button"
                   label="Login"
-                  onClick={handleNext}
+                  onClick={handleLogin}
                 />
               </ButtonArea>
             </>
